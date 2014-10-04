@@ -1,0 +1,6 @@
+## Directories ##
+Debug/
+Release/
+
+## Files ##
+*.exe
