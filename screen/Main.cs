@@ -123,14 +123,17 @@ namespace Screen
 
 					// x y z
 
+
+					var zLen = 2;
 					for(var tz = 0; tz < 10; tz++) {
-						for(var tx = 0; tx < 10; tx++) {
-							var tzpitch = tz + 2;
-							var txpitch = tx + 2;
+						//for(var tx = 0; tx < 10; tx++)
+						{
+							var tzpitch = tz * zLen;
+							//var txpitch = tx + 2;
 							
 							GL.Vertex3(1.0f, -1.0f, tzpitch);
 							GL.Vertex3(-1.0f, -1.0f, tzpitch);
-							GL.Vertex3(1.0f, -1.0f, tzpitch + 2);
+							GL.Vertex3(1.0f, -1.0f, tzpitch + zLen);
 
 							/*
 							GL.Vertex3(1.0f, -1.0f, 3.0f + tzpitch);
