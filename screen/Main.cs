@@ -122,7 +122,7 @@ namespace Screen
 					GL.Begin(PrimitiveType.Triangles);
 
 					// x y z
-					/*
+
 					for(var tz = 0; tz < 10; tz++) {
 						for(var tx = 0; tx < 10; tx++) {
 							var tzpitch = tz + 2;
@@ -132,10 +132,20 @@ namespace Screen
 							GL.Vertex3(-1.0f, -1.0f, tzpitch);
 							GL.Vertex3(1.0f, -1.0f, tzpitch + 2);
 
+							/*
+							GL.Vertex3(1.0f, -1.0f, 3.0f + tzpitch);
+							GL.Vertex3(-1.0f, -1.0f, 3.0f + tzpitch);
+							GL.Vertex3(1.0f, -1.0f, 5.0f + tzpitch);
+
+							GL.Vertex3(1.0f, -1.0f, 5.0f + tzpitch);
+							GL.Vertex3(-1.0f, -1.0f, 5.0f + tzpitch);
+							GL.Vertex3(-1.0f, -1.0f, 3.0f + tzpitch);
+							*/
+
 //							Console.WriteLine("tx=" + tx + " tz=" + tz + " tzpitch=" + tzpitch);
 						}
 					}
-					*/
+
 
                     GL.End();
 					
